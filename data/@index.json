@@ -1,0 +1,9 @@
+{
+    "animal": "animals.json",
+    "bird": "bird.json",
+    "cat": "cat.json",
+    "dog": "dog.json",
+    "fish": "fish.json",
+    "security": "security.json",
+    "NATO phonetic alphabet": "nato-phonetic-alphabet.json"
+}
