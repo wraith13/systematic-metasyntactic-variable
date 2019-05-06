@@ -1,4 +1,4 @@
-# Systematic Metasyntactic Variable
+# Systematic Metasyntactic Variables
 
 ## 🇬🇧 English
 
