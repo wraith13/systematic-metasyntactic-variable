@@ -1,5 +1,5 @@
 {
-    "animal": "animals.json",
+    "animal": "animal.json",
     "bird": "bird.json",
     "cat": "cat.json",
     "dog": "dog.json",

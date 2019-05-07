@@ -2,7 +2,7 @@
 
 ## 🇬🇧 English
 
-By providing multiple serieses of metasyntax variables, you can specify the existence of different serieses when using metasyntax variables.
+By providing multiple serieses of metasyntax variables, you can express the existence of different serieses when using metasyntax variables.
 This is a list for that purpose, but as it is very incomplete at the moment, I am waiting for pull request.
 
 ## 🇯🇵 Japanese

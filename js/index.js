@@ -39,18 +39,60 @@ var minamo_js_1 = require("./minamo.js");
 var index;
 (function (index) {
     var _this = this;
+    var application = Object.freeze({
+        title: "Systematic Metasyntactic Variables",
+        description: "What is this? : By providing multiple serieses of metasyntax variables, you can express the existence of different serieses when using metasyntax variables.",
+        dataPath: "data",
+    });
+    index.getList = function (dictionary) {
+        return Object.keys(dictionary).map(function (key) { return dictionary[key]; }).reduce(function (a, b) { return a.concat(b); }, []);
+    };
+    index.render = function (list) { return list.join(", "); };
     index.onload = function () { return __awaiter(_this, void 0, void 0, function () {
-        var title;
-        return __generator(this, function (_a) {
-            title = "Systematic Metasyntactic Variables";
-            document.title = title;
-            minamo_js_1.minamo.dom.appendChildren(document.body, [
-                {
-                    tag: "h1",
-                    children: title
-                }
-            ]);
-            return [2 /*return*/];
+        var dataIndex, _a, _b, _c, _d, _e;
+        var _this = this;
+        return __generator(this, function (_f) {
+            switch (_f.label) {
+                case 0:
+                    document.title = application.title;
+                    minamo_js_1.minamo.dom.appendChildren(document.body, [
+                        {
+                            tag: "h1",
+                            id: application.title.replace(/\W/, "-"),
+                            children: application.title
+                        },
+                        application.description
+                    ]);
+                    _b = (_a = JSON).parse;
+                    return [4 /*yield*/, minamo_js_1.minamo.http.get(application.dataPath + "/@index.json")];
+                case 1:
+                    dataIndex = _b.apply(_a, [_f.sent()]);
+                    _d = (_c = minamo_js_1.minamo.dom).appendChildren;
+                    _e = [document.body];
+                    return [4 /*yield*/, Promise.all(Object.keys(dataIndex).map(function (key) { return __awaiter(_this, void 0, void 0, function () {
+                            var _a, _b, _c, _d, _e;
+                            return __generator(this, function (_f) {
+                                switch (_f.label) {
+                                    case 0:
+                                        _a = [{
+                                                tag: "h2",
+                                                id: key.replace(/\W/, "-"),
+                                                children: key
+                                            }];
+                                        _b = index.render;
+                                        _c = index.getList;
+                                        _e = (_d = JSON).parse;
+                                        return [4 /*yield*/, minamo_js_1.minamo.http.get(application.dataPath + "/" + dataIndex[key])];
+                                    case 1: return [2 /*return*/, _a.concat([
+                                            _b.apply(void 0, [_c.apply(void 0, [_e.apply(_d, [_f.sent()])])])
+                                        ])];
+                                }
+                            });
+                        }); }))];
+                case 2:
+                    _d.apply(_c, _e.concat([_f.sent()]));
+                    return [2 /*return*/];
+            }
         });
     }); };
 })(index = exports.index || (exports.index = {}));
