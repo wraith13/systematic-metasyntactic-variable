@@ -2,13 +2,16 @@
 
 ## 🇬🇧 English
 
-By providing multiple serieses of metasyntax variables, you can express the existence of different serieses when using metasyntax variables.
-This is a list for that purpose, but as it is very incomplete at the moment, I am waiting for pull request.
+This is a list for that you can express the existence of different serieses when using metasyntax variables.
 
 ## 🇯🇵 Japanese
 
-複数系統のメタ構文変数を用意しておくことで、メタ構文変数を使うときに異なる系統の存在であることを明示できます。
-これはその為のリストですが、現状、とても不完全なので、プルリクをお待ちしております。
+これはメタ構文変数を使うときに異なる系統の存在であることを明示する為のリストです。
+
+## links
+
+- [live site](https://wraith13.github.io/systematic-metasyntactic-variables/)
+- [raw data](./data/)
 
 ## License
 

@@ -36,7 +36,12 @@ export module index
                         {
                             tag: "h2",
                             id: key.replace(/\W/, "-"),
-                            children: key
+                            children:
+                            {
+                                tag: "a",
+                                href: `https://github.com/wraith13/systematic-metasyntactic-variables/blob/master/data/${dataIndex[key]}`,
+                                children: key
+                            }
                         },
                         render
                         (
