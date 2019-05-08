@@ -2,12 +2,14 @@
 <html>
 <head>
 <meta charset="utf-8">
+<title>Systematic Metasyntactic Variables</title>
 <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
-<meta name="theme-color" content="#444461">
+<meta name="theme-color" content="#114422">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@wraith13">
 <meta name="twitter:title" content="writing" id="twitter-card-title">
 <meta name="twitter:description" content="Systematic Metasyntactic Variables">
+<link rel="stylesheet" type="text/css" href="css/index.css" />
 <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
 <script type="text/javascript" src="https://wraith13.github.io/evil-commonjs/index.js"></script>
 <script>
@@ -25,5 +27,11 @@ var index = module.capture("js/index.js").index;
 </script>
 </head>
 <body onload="index.onload()">
+    <h1>Systematic Metasyntactic Variables</h1>
+    <div id="toolbar">
+        <a id="github" href="https://github.com/wraith13/tweets/" class="btn btn-dark" role="button">GitHub</a>
+        <span id="tweet"><a href="#" class="btn twitter-share-button" data-size="large" role="button" onclick="location.href='https://twitter.com/intent/tweet?text='+encodeURIComponent('【'+document.title+'】 '+location.href +' ');return false;">tweet</a></span>
+    </div>
+    <p>What is this? : By providing multiple serieses of metasyntax variables, you can express the existence of different serieses when using metasyntax variables.</p>
 </body>
 </html>

@@ -40,29 +40,24 @@ var index;
 (function (index) {
     var _this = this;
     var application = Object.freeze({
-        title: "Systematic Metasyntactic Variables",
         description: "What is this? : By providing multiple serieses of metasyntax variables, you can express the existence of different serieses when using metasyntax variables.",
         dataPath: "data",
     });
     index.getList = function (dictionary) {
         return Object.keys(dictionary).map(function (key) { return dictionary[key]; }).reduce(function (a, b) { return a.concat(b); }, []);
     };
-    index.render = function (list) { return list.join(", "); };
+    index.render = function (list) {
+        return ({
+            tag: "div",
+            children: list.join(", "),
+        });
+    };
     index.onload = function () { return __awaiter(_this, void 0, void 0, function () {
         var dataIndex, _a, _b, _c, _d, _e;
         var _this = this;
         return __generator(this, function (_f) {
             switch (_f.label) {
                 case 0:
-                    document.title = application.title;
-                    minamo_js_1.minamo.dom.appendChildren(document.body, [
-                        {
-                            tag: "h1",
-                            id: application.title.replace(/\W/, "-"),
-                            children: application.title
-                        },
-                        application.description
-                    ]);
                     _b = (_a = JSON).parse;
                     return [4 /*yield*/, minamo_js_1.minamo.http.get(application.dataPath + "/@index.json")];
                 case 1:

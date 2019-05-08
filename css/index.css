@@ -1,0 +1,74 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+body, button
+{
+    font-size: 1.2em;
+}
+body
+{
+    margin: 0px;
+    padding: 0px;
+    color:#114422;
+    background-color: #E0FFF0;
+    font-family: 'Noto Sans Japanese', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro';
+}
+body > *
+{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+h1
+{
+    color:#F8FFF8;
+    background-color:#114422;
+    font-weight: normal;
+    text-align: left;
+    margin: 0px;
+    padding-left: 20px;
+}
+#toolbar
+{
+    text-align: right;
+    padding: 4px;
+    display: inline-block;
+    float: right;
+    margin: 0px;
+}
+a.btn
+{
+    display: inline-block;
+    padding: 6px 12px 7px 12px;
+    margin-bottom: 0;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.0;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    text-decoration: none;
+}
+#toolbar a.btn
+{
+    margin-top: -6px;
+}
+.btn-dark
+{
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+}
+.twitter-share-button
+{
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
