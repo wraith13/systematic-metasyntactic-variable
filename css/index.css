@@ -10,6 +10,7 @@ body
     color:#114422;
     background-color: #E0FFF0;
     font-family: 'Noto Sans Japanese', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro';
+    padding-bottom: 1em;
 }
 body > *
 {
