@@ -4,6 +4,7 @@
     "Cats": "cats.json",
     "Dogs": "dogs.json",
     "Fishes": "fishes.json",
+    "Flowers": "flowers.json",
     "Security": "security.json",
     "NATO phonetic alphabet": "nato-phonetic-alphabet.json"
 }
