@@ -19,6 +19,7 @@ body > *
 }
 h1
 {
+    font-size: 1.2em;
     color:#F8FFF8;
     background-color:#114422;
     font-weight: normal;
@@ -28,6 +29,7 @@ h1
 }
 h2
 {
+    font-size: 1.1em;
     margin-bottom: 4px;
 }
 h2 > a
