@@ -5,6 +5,11 @@
     "Dogs": "dogs.json",
     "Fishes": "fishes.json",
     "Flowers": "flowers.json",
+    "Greek mythology: Primordial deities": "greek-primodial-deties.json",
+    "Greek mythology: Primordial deities: Ourea": "greek-primodial-deties-ourea.json",
+    "Greek mythology: Titan deities": "greek-titan-deties.json",
+    "Greek mythology: Olympian deities": "greek-olympian-deties.json",
+    "Greek mythology: Olympian deities: Muses": "greek-olympian-deties-muses.json",
     "Security": "security.json",
     "NATO phonetic alphabet": "nato-phonetic-alphabet.json"
 }
